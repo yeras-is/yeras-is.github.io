@@ -1,0 +1,10 @@
+{
+    "generationTool": "pwabuilder-api",
+    "generationToolVersion": "2.0.1-rc.0",
+    "platformId": "windows10",
+    "platformPackage": "pwabuilder-windows10",
+    "platformVersion": "2.0.4-rc.4",
+    "generatedFrom": "Website Wizard",
+    "generationDate": "2019-09-11 12:27:20 Z",
+    "generatedURL": "https://yeras-is.github.io/manifest.json"
+}
