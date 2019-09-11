@@ -9,8 +9,8 @@
     "description" : "Java Full Stack developer. Experience 1+ year. Stack: Angular 7 , Sring MVC, Security, Cuba Platform",
     "orientation" : "any",
     "background_color" : "transparent",
-    "related_applications" : "",
-    "prefer_related_applications" : "false",
+    "related_applications" : [],
+    "prefer_related_applications" : false,
     "generated" : "true",
     "icons" : [
         {
