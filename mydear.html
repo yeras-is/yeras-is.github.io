@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--@author yeras-is-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My dear</title>
+    <style type="text/css">
+        body {
+            background-color: black;
+            /* Firefox */
+            background-image: -moz-radial-gradient(circle, #FFFFFF 2px, rgba(248, 255, 128, .5) 4px, transparent 40px),
+            -moz-radial-gradient(circle, #FFFFFF 1px, rgba(255, 186, 170, .4) 3px, transparent 30px),
+            -moz-radial-gradient(ellipse, rgba(255, 255, 255, .9) 1px, rgba(251, 255, 186, .3) 2px, transparent 40px),
+            -moz-radial-gradient(ellipse, rgba(255, 255, 255, .4), rgba(253, 255, 219, .2) 1px, transparent 30px);
+            /* Webkit */
+            background-image: -webkit-gradient(radial, 50% 50%, 2, 50% 50%, 40, from(white), color-stop(0.1, rgba(248, 255, 128, .5)), to(transparent)),
+            -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 30, from(white), color-stop(0.1, rgba(255, 186, 170, .4)), to(transparent)),
+            -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 40, from(rgba(255, 255, 255, .9)), color-stop(0.05, rgba(251, 255, 186, .3)), to(transparent)),
+            -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 30, from(rgba(255, 255, 255, .4)), color-stop(0.03, rgba(253, 255, 219, .2)), to(transparent));
+            /* Background Attributes */
+            background-size: 550px 550px, 350px 350px, 250px 270px, 220px 200px;
+            background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+            /* Animation */
+            animation-name: movement;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            /* Firefox */
+            -moz-animation-name: movement;
+            -moz-animation-duration: 5s;
+            -moz-animation-timing-function: linear;
+            -moz-animation-iteration-count: infinite;
+            /* Webkit */
+            -webkit-animation-name: movement;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+        }
+
+        @keyframes movement {
+            from {
+                background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+            }
+            to {
+                background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+            }
+        }
+
+        @-moz-keyframes movement {
+            from {
+                background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+            }
+            to {
+                background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+            }
+        }
+
+        @-webkit-keyframes movement {
+            from {
+                background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+            }
+            to {
+                background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="black-background">
+    <div id="burning"></div>
+</div>
+
+<style>
+
+    @-webkit-keyframes shake-horizontal {
+        0%,
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+        10%,
+        30%,
+        50%,
+        70% {
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+        }
+        20%,
+        40%,
+        60% {
+            -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+        }
+        80% {
+            -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+        }
+        90% {
+            -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+        }
+    }
+
+    @keyframes shake-horizontal {
+        0%,
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+        10%,
+        30%,
+        50%,
+        70% {
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+        }
+        20%,
+        40%,
+        60% {
+            -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+        }
+        80% {
+            -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+        }
+        90% {
+            -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+        }
+    }
+
+    .progress {
+        -webkit-animation: shake-horizontal 0.8s linear infinite alternate;
+        animation: shake-horizontal 0.8s linear infinite alternate;
+        margin: 50vh auto 0 45vw;
+        position: relative;
+        border: 1px solid darkorange;
+        box-shadow: -20px 0 10px 7px darkorange;
+        border-radius: 20px;
+        width: 20px;
+        height: 20px;
+        background: darkslategray;
+    }
+
+    #black-background {
+        background: transparent;
+    }
+
+    #burning {
+        background: #402000;
+        margin: 50vh auto 0 45vw;
+        border-radius: 40px;
+        box-shadow: /* головка */ inset #806040 0 0 10px 2px,
+            /* прозрачно-голубо-белая часть */ #102030 0px 0px 20px 6px,
+        #c8d8e0 -10px 0px 17px 4px,
+        #d8e8f0 -20px 0px 15px -2px,
+        #e0f0f8 -30px 0px 14px -6px,
+        #e8f8ff -40px 0px 12px -9px,
+        #ffffff -50px 0px 10px -12px,
+        #ffffe0 -55px 0px 10px -14px,
+        #ffffc0 -60px 0px 10px -20px,
+        #ffffa0 -62px 0px 10px -22px,
+        #ffff80 -64px 0px 10px -24px,
+            /* желто-красная часть */ #ffff40 0px 0px 15px 4px,
+        #ffff30 -10px 0px 13px 6px,
+        #ffff20 -20px 0px 12px 8px,
+        #ffff10 -30px 0px 11px 6px,
+        #ffff00 -40px 0px 10px 4px,
+        #fff000 -50px 0px 10px 2px,
+        #ffe000 -60px 0px 10px 0px,
+        #ffd000 -70px 0px 10px -4px,
+        #ffc000 -80px 0px 10px -6px,
+        #ffa000 -90px 0px 10px -10px,
+        #ff8000 -100px 0px 10px -14px,
+        #ff6000 -110px 0px 10px -16px,
+        #ff4000 -120px 0px 10px -20px,
+        #ff2000 -124px 0px 10px -22px,
+        #ff0000 -127px 0px 10px -24px;
+        height: 60px;
+        width: 60px;
+    }
+</style>
+
+</body>
+</html>
