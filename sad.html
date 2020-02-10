@@ -2,7 +2,15 @@
 <html>
 <head>
     <meta charset=UTF-8/>
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            background: black;
+            overflow: hidden;
+        }
+    </style>
     <title>SAD</title>
 </head>
 <body onload="function playMusic() {
@@ -29,6 +37,7 @@ playMusic()">
         directionalLight = new THREE.DirectionalLight(0xffeedd);
         directionalLight.position.set(0, 0, 1);
         scene.add(directionalLight);
+
 
         flash = new THREE.PointLight(0x062d89, 30, 500, 1.7);
         flash.position.set(200, 300, 200);
