@@ -1,1 +1,19 @@
-{"short_name":"YMCV","name":"Yerassyl Maikhanov CV","icons":[{"src":"/assets/img/programmer%20(2).png","type":"image/png","sizes":"256x256"},{"src":"/assets/img/programmer%20(3).png","type":"image/png","sizes":"512x512"}],"start_url":"/index.html","display":"fullscreen","orientation":"portrait"}
+{
+  "short_name": "YMCV",
+  "name": "Yerassyl Maikhanov CV",
+  "icons": [
+    {
+      "src": "/assets/img/programmer%20(2).png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/assets/img/programmer%20(3).png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "orientation": "portrait"
+}
