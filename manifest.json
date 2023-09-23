@@ -1,6 +1,6 @@
 {
-    "name": "moderncv",
-    "short_name": "moderncv",
+    "name": "flutter_talks",
+    "short_name": "flutter_talks",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
